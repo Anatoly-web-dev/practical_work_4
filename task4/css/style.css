@@ -215,6 +215,10 @@ body {
 	letter-spacing: 0.8px;
 }
 
+.task__link:visited {
+	color: rgb(202, 242, 255);
+}
+
 .task__link:hover {
 	color: rgb(52, 251, 241);
 	transition: 0.5s linear 0.04s;

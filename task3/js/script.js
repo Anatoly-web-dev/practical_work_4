@@ -59,7 +59,7 @@ function makeColorRed() {
 trafficLightElements.forEach(element =>
 	element.addEventListener('click', // каждому элементу коллекции назначаем событие
 		() => {
-			// функции смены цветов у элементов выполняются с небольшой задержкой для плавности
+			// функции смены цветов у элементов выполняются с небольшой задержкой
 			setTimeout(makeColorGreen, 300);
 			setTimeout(makeColorYellow, 1000);
 			setTimeout(makeColorRed, 1500);
@@ -67,9 +67,6 @@ trafficLightElements.forEach(element =>
 		// { once: true } // - обработчик будет автоматически удалён после выполнения 
 		// (расскомментировать код выше если нужно, чтобы событие для каждого элемента произошло всего 1 раз)
 	));
-
-
-
 
 
 
