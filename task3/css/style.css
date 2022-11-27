@@ -221,6 +221,11 @@ body {
 	transition: 0.3s linear 0.03s;
 }
 
+.task_2__item-container {
+	max-width: 100px;
+	margin: 0 auto;
+}
+
 .task_2__item {
 	width: 100px;
 	height: 100px;
