@@ -64,26 +64,26 @@
 					</div>
 					<div class="example">
 						<p>Пример использования команды <span>console.log()</span></p>
-						<code class="example__code">
+						<div class="example__code">
 							<p>alert('Вам будет предложено ввести 2 числа');</p>
 							<br>
 							<p>let answer = confirm('Хотите узнать их сумму?');</p>
 							<p>let a, b;</p>
 							<br>
 							<p>if (answer == true) {</p>
-								<p>a = +prompt('число 1?');</p>
-								<p>b = +prompt('число 2?');</p>
+							<p>a = +prompt('число 1?');</p>
+							<p>b = +prompt('число 2?');</p>
 							<p>}</p>
 							<br>
 							<p>const result = a + b;</p>
 							<br>
 							<p>if (!isFinite(result)) {</p>
-								<p>alert('Вы отменили ввод или указали не число!');</p>
+							<p>alert('Вы отменили ввод или указали не число!');</p>
 							<p>} else {</p>
-								<p>alert('Результат вы узнаете в консоли :)');</p>
-								<p>console.log(result);</p>
+							<p>alert('Результат вы узнаете в консоли :)');</p>
+							<p>console.log(result);</p>
 							<p>}</p>
-						</code>
+						</div>
 					</div>
 				</section>
 				<section class="practical-work__task task">
@@ -93,15 +93,15 @@
 					</div>
 					<div class="example">
 						<p>Пример использования команды <span>alert()</span></p>
-						<code class="example__code">
+						<div class="example__code">
 							<p>let answer = prompt('Назовите столицу РФ', '').toLowerCase();</p>
 							<p>if (answer == 'москва') {</p>
-								<p>alert('Правильный ответ!');</p>
-								<p>alert('Вы такой умный :)');</p>
+							<p>alert('Правильный ответ!');</p>
+							<p>alert('Вы такой умный :)');</p>
 							<p>} else {</p>
-								<p>alert('Неверно!');</p>
+							<p>alert('Неверно!');</p>
 							<p>}</p>
-						</code>
+						</div>
 					</div>
 				</section>
 				<section class="practical-work__task task">
@@ -111,21 +111,21 @@
 					</div>
 					<div class="example">
 						<p>Пример использования команды <span>prompt()</span></p>
-						<code class="example__code">
+						<div class="example__code">
 							<p>let birthYear = +prompt('Год вашего рождения?', '');</p>
 							<p>const currentYear = 2022;</p>
 							<p>const yourAge = currentYear - birthYear;</p>
 							<br>
 							<p>if (!isFinite(birthYear)) {</p>
-								<p>alert('Вы указали не число');</p>
+							<p>alert('Вы указали не число');</p>
 							<p>} else if (birthYear > 2022) {</p>
-								<p>alert('Вы из будущего!');</p>
+							<p>alert('Вы из будущего!');</p>
 							<p>} else if (birthYear < 1922) {</p>
-								<p>alert('Ого! Вот это вы долгожитель!');</p>
-							<p>} else {</p>
-								<p>alert(`Вам ${yourAge} лет(год)`);</p>
-							<p>}</p>
-						</code>
+									<p>alert('Ого! Вот это вы долгожитель!');</p>
+									<p>} else {</p>
+									<p>alert(`Вам ${yourAge} лет(год)`);</p>
+									<p>}</p>
+						</div>
 					</div>
 				</section>
 			</article>
@@ -157,7 +157,7 @@
 				</ul>
 			</nav>
 			<div class="footer__text">
-				<p>&copy 2022 Все права защищены, <span>JS-Старт</span></p>
+				<p>&copy; 2022 Все права защищены, <span>JS-Старт</span></p>
 			</div>
 		</footer>
 
