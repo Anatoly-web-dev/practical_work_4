@@ -31,6 +31,7 @@ trafficLightEl.addEventListener('click', makeGreen);
 Порядок смены цвета тот же, что и в изначальном задании.       							+++
 */
 
+
 // получаем коллекцию нужных нам элементов
 const trafficLightElements = document.querySelectorAll('.task_2__item');
 // присваиваем каждому элементу коллекции константу (Деструктурирующее присваивание)
@@ -78,7 +79,6 @@ trafficLightElements.forEach(element =>
 const trafficLightElements2 = document.querySelectorAll('.task_2__item');
 // присваиваем каждому элементу коллекции константу (Деструктурирующее присваивание)
 const [greenCircle2, yellowCircle2, redCircle2] = trafficLightElements2;
-
 // получаем родительский элемент нашего светофора
 const parentElement = document.querySelector('.task_2__item-container');
 
@@ -101,17 +101,27 @@ function makeColorRed() {
 	redCircle2.style.background = 'red';
 }
 
-// создаем событие, используем погружение
-parent.addEventListener('click', () => {
+// создаем событие у родительского элемента
+parentElement.addEventListener('click', () => {
 	setTimeout(makeColorGreen, 300);
 	setTimeout(makeColorYellow, 1000);
 	setTimeout(makeColorRed, 1500);
-},
-	{ capture: true }
-);
+});
 
 */
 
+// или создаем событие у всего документа и при определенном условии выполняем наш код
+// document.addEventListener('click',
+//	(event) => {
+//		if (event.target.parentElement === parentElement) {
+//			setTimeout(makeColorGreen, 300);
+//			setTimeout(makeColorYellow, 1000);
+//			setTimeout(makeColorRed, 1500);
+//		} else {
+//			console.log(event);
+//			console.log('Что то пошло не так :(');
+//		}
+//	});
 
 
 
