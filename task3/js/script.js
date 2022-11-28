@@ -69,6 +69,51 @@ trafficLightElements.forEach(element =>
 	));
 
 
+// ------------Альтернативный вариант выполнения улучшенного светофора ---------- 
+// =================== расскоменировать, закомментировать решение выше =============
+
+/*
+
+// получаем коллекцию нужных нам элементов
+const trafficLightElements2 = document.querySelectorAll('.task_2__item');
+// присваиваем каждому элементу коллекции константу (Деструктурирующее присваивание)
+const [greenCircle2, yellowCircle2, redCircle2] = trafficLightElements2;
+
+// получаем родительский элемент нашего светофора
+const parentElement = document.querySelector('.task_2__item-container');
+
+// создаем функции меняющие цвета у элементов на нужные
+function makeColorGreen() {
+	greenCircle2.style.background = 'green';
+	yellowCircle2.style.background = 'black';
+	redCircle2.style.background = 'black';
+}
+
+function makeColorYellow() {
+	greenCircle2.style.background = 'black';
+	yellowCircle2.style.background = 'yellow';
+	redCircle2.style.background = 'black';
+}
+
+function makeColorRed() {
+	greenCircle2.style.background = 'black';
+	yellowCircle2.style.background = 'black';
+	redCircle2.style.background = 'red';
+}
+
+// создаем событие, используем погружение
+parent.addEventListener('click', () => {
+	setTimeout(makeColorGreen, 300);
+	setTimeout(makeColorYellow, 1000);
+	setTimeout(makeColorRed, 1500);
+},
+	{ capture: true }
+);
+
+*/
+
+
+
 
 
 
